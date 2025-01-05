@@ -4,52 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile App Launch</title>
+    <title>Spotify Music App</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="">
-    <!-- Header -->
-    <header class="bg-gradient-to-r from-green-500 to-green-700 text-white text-center py-8 shadow-lg">
-        <h1 class="text-4xl font-bold">Introducing Our New Mobile App</h1>
-        <p class="text-lg mt-2">The best way to simplify your life. Download now and experience the change!</p>
-    </header>
+<body class="bg-zinc-900">
+    <main>
 
-    <!-- Main Container -->
-    <div class="container mx-auto px-6 py-10 ">
-        <!-- Hero Section -->
-        <div class="hero text-center mb-10 flex items-center ">
-            <img src="https://images.unsplash.com/photo-1611339555312-e607c8352fd7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="  h-[50vh]  object-contain max-w-full rounded-xl shadow-md mx-auto">
+        <nav class="px-6 py-3 bg-zinc-800 flex items-center justify-between">
+
+            <div class="logo flex gap-2 text-2xl md:text-3xl items-center font-bold text-[#18D860]">
+                <img class="h-8 w-8 md:h-10 md:w-10 object-cover" src="logo.png" alt="Spotify Logo">
+                <h1>Spotify</h1>
+            </div>
+
+
+            <div class="hidden md:flex items-center text-gray-100 text-lg font-medium space-x-6">
+                <a href="#home" class="hover:text-green-300 transition">Home</a>
+                <a href="#explore" class="hover:text-green-300 transition">Explore</a>
+                <a href="#playlists" class="hover:text-green-300 transition">Playlists</a>
+                <a href="#podcasts" class="hover:text-green-300 transition">Podcasts</a>
+                <a href="#premium" class="hover:text-green-300 transition">Premium</a>
+            </div>
+
+
+            <div class="call-to-action flex gap-4">
+                <button class="px-3 py-1 bg-[#01A447] border border-zinc-900 text-stone-50 rounded-lg text-sm md:text-base transform hover:bg-[#019c3f] hover:scale-105 transition duration-300">
+                    Login
+                </button>
+                <button class="px-3 py-1 bg-[#01A447] border border-zinc-900 text-stone-50 rounded-lg text-sm md:text-base transform  hover:scale-105 transition duration-300">
+                    Sign in
+                </button>
+            </div>
+            
+            <!-- Hamburger Menu (for mobile) -->
+            <div class="md:hidden text-white text-xl cursor-pointer">
+                <span>&#9776;</span>
+            </div>
+        </nav>
+
+
+        <div class="flex flex-col md:flex-row items-center h-[89vh] w-full">
+
+            <div class="h-96 md:h-full w-full md:w-1/2 bg-cover bg-center"
+                style="background-image: url('https://images.unsplash.com/photo-1611339555312-e607c8352fd7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            </div>
+
+
+            <div class="p-6 md:p-12 text-white text-center md:text-center md:w-1/2">
+                <h1 class="text-3xl md:text-6xl font-semibold mb-4">All Your Favorite Hits in One App</h1>
+                <h2 class="text-lg md:text-2xl text-gray-200 font-medium mb-4">Stream Music Anywhere, Anytime</h2>
+                <p class="text-sm md:text-md text-gray-300 mb-6">
+                    Take your music experience to the next level with our app. Discover millions of songs, curated
+                    playlists,
+                    and trending podcasts at your fingertips. Whether you're commuting, working out, or just relaxing,
+                    we've
+                    got the perfect soundtrack for every moment.
+                </p>
+                <h2 class="text-lg md:text-2xl text-gray-200 font-medium mb-6">Download Now and Enjoy Unlimited Music
+                </h2>
+
+                <div class=" flex gap-4 justify-center px-28 items-center md:justify-start">
+                    <img class="h-14 md:h-14 w-[110px] md:w-[190px] object-cover transform hover:scale-[0.95] transition duration-300 cursor-pointer"
+                        src="playstore.png" alt="Google Play">
+                    <img class="h-14 md:h-14 w-[110px] md:w-[190px] object-cover transform hover:scale-[0.95] transition duration-300 cursor-pointer"
+                        src="app.png" alt="App Store">
+                </div>
+
+            </div>
         </div>
-
-        <!-- Features Section -->
-        <section class="features flex items-center justify-center gap-4">
-            <div class="feature bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-2xl transition-shadow duration-300">
-                <h3 class="text-2xl font-semibold text-green-600 mb-4">Feature 1</h3>
-                <p class="text-gray-600">Describe your app's unique feature that solves a problem or adds value.</p>
-            </div>
-            <div class="feature bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-2xl transition-shadow duration-300">
-                <h3 class="text-2xl font-semibold text-green-600 mb-4">Feature 2</h3>
-                <p class="text-gray-600">Highlight another key benefit of your app to grab the user's attention.</p>
-            </div>
-            <div class="feature bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-2xl transition-shadow duration-300">
-                <h3 class="text-2xl font-semibold text-green-600 mb-4">Feature 3</h3>
-                <p class="text-gray-600">Explain how your app stands out from the competition.</p>
-            </div>
-        </section>
-
-        <!-- Call-to-Action -->
-        <div class="cta text-center mt-12">
-            <button class="bg-gradient-to-r from-green-500 to-green-700 text-white px-6 py-3 rounded-full text-lg shadow-lg hover:scale-105 transform transition duration-300">
-                Download Now
-            </button>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white text-center py-6 mt-12">
-        <p>&copy; 2025 MobileApp Inc. All Rights Reserved.</p>
-    </footer>
+    </main>
 </body>
 
 </html>
